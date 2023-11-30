@@ -1,0 +1,20 @@
+---
+import CardChi from "./CardChi.astro";
+import CardLa from "./CardLa.astro";
+import CardMiami from "./CardMiami.astro";
+import CardBali from "./CardBali.astro";
+---
+
+<div id="rentas_destacadas" class="px-2 h-full w-full lg:px-6">
+  <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas Destacadas</p>
+  <div class="w-full h-full flex flex-col items-center justify-center">
+    <CardChi />
+    <div class="lg:flex lg:h-full lg:w-full lg:space-x-4 sm:w-full sm:h-full">
+      <CardLa />
+      <div class="h-full w-full">
+        <CardMiami />
+        <CardBali />
+      </div>
+    </div>
+  </div>
+</div>

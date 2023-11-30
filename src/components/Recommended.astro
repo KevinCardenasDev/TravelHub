@@ -1,0 +1,24 @@
+---
+import CardNor from "./CardNor.astro";
+import CardNyc from "./CardNyc.astro";
+import CardYos from "./CardYos.astro";
+import CardSeat from "./CardSeat.astro";
+---
+
+<section id="recomendados" class="p-6">
+  <p class="text-3xl font-semibold text-primary">Recomendados</p>
+  <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden lg:overflow-hidden">
+    <CardNor />
+    <CardNyc />
+    <CardYos />
+    <CardSeat />
+    <CardNor />
+    <CardNyc />
+    <CardYos />
+    <CardSeat />
+    <CardNor />
+    <CardNyc />
+    <CardYos />
+    <CardSeat />
+  </div>
+</section>
