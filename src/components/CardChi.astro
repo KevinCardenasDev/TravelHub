@@ -2,7 +2,10 @@
 import chicago from '../../public/img/chicago.jpg'
 ---
 
-<div class="w-full h-96 bg-cover rounded-xl mb-8 lg:bg-center" style="background-image: url('../../public/img/chicago.jpg');">
-  <p class="text-3xl px-8 pt-8 pb-2 font-semibold text-white lg:text-black">Chicago</p>
-  <p class="text-sm pl-8 text-white mr-24 lg:text-lg lg:text-black">2 habitaciones, baño y cocina</p>
+<div class="w-full h-96 bg-cover rounded-xl mb-8 lg:bg-center relative">
+  <img class="w-full h-full rounded-t-lg bg-cover absolute" src={chicago.src} alt="chicago image">
+  <div class="absolute flex flex-col justify-end">
+    <p class="text-3xl px-8 pt-8 pb-2 font-semibold text-white lg:text-black">Chicago</p>
+    <p class="text-sm pl-8 text-white mr-24 lg:text-lg lg:text-black">2 habitaciones, baño y cocina</p>
+  </div>
 </div>
